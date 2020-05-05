@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [test_suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.framework.Listerners.TestListener"/>
+    <listener class-name="com.framework.Listerners.ConditionalSkipTestAnalyzer"/>
+    <listener class-name="com.framework.Listerners.RetryInvoke"/>
+  </listeners>
+  <test name="Regression testing(failed)">
+    <classes>
+      <class name="com.framework.testcases.AccountsPageTest">
+        <methods>
+          <include name="endSession"/>
+          <include name="VerifyTestFailure"/>
+          <include name="startSession"/>
+          <include name="VerifyNoMode"/>
+        </methods>
+      </class> <!-- com.framework.testcases.AccountsPageTest -->
+    </classes>
+  </test> <!-- Regression testing(failed) -->
+</suite> <!-- Failed suite [test_suite] -->
