@@ -8,7 +8,7 @@ public class ConstantValues {
 			+ "src\\main\\java\\com\\framework\\config\\config.properties";
 
 	public static final String TESTDATA_PATH = System.getProperty("user.dir") + File.separator
-			+ "src\\main\\resources\\TestData\\TestData.xlsx";
+			+ "TestData.xlsx";
 
 	public static final String chromeExePath = System.getProperty("user.dir") + File.separator + "src\\main\\resources\\executables\\chromedriver.exe";
 	public static final String configSheetName = "ConfigDetails";
